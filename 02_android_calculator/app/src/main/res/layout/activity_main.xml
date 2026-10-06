@@ -32,7 +32,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="첫 번째 숫자 (x)"
-            android:inputType="numberSigned|numberDecimal"
+            android:imeOptions="flagNoExtractUi"
+        android:inputType="numberSigned|numberDecimal"
             android:textSize="22sp" />
 
         <EditText
@@ -41,7 +42,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:hint="두 번째 숫자 (y)"
-            android:inputType="numberSigned|numberDecimal"
+            android:imeOptions="flagNoExtractUi"
+        android:inputType="numberSigned|numberDecimal"
             android:textSize="22sp" />
 
         <LinearLayout

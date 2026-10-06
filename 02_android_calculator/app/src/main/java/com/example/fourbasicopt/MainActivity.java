@@ -7,6 +7,9 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.math.BigDecimal;
+import java.math.MathContext;
+
 public class MainActivity extends Activity {
 
     private final FourBasicOpt fourOpt = new FourBasicOpt();
@@ -71,6 +74,8 @@ public class MainActivity extends Activity {
         if (value == Math.rint(value) && !Double.isInfinite(value)) {
             return String.valueOf((long) value);
         }
-        return String.valueOf(value);
+        // 화면에 한 줄로 들어가도록 유효숫자 10자리로 반올림
+        return new BigDecimal(value).round(new MathContext(10))
+                .stripTrailingZeros().toPlainString();
     }
 }

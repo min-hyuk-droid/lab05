@@ -1,0 +1,8 @@
+<resources>
+    <!-- Android 15(targetSdk 35)의 강제 edge-to-edge를 끄고, 화면 내용이 상태바/내비게이션바 밑으로 들어가지 않게 함 -->
+    <style name="AppTheme" parent="@android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:statusBarColor">#F4F6FA</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowOptOutEdgeToEdgeEnforcement">true</item>
+    </style>
+</resources>
