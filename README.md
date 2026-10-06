@@ -1,5 +1,14 @@
 # lab05 — TDD 사칙연산 실습 & 사칙연산 안드로이드 앱
 
+## 제출 내용
+
+| 요구사항 | 위치 |
+|---|---|
+| 1. TDD 사칙연산 실습 — 최종 콘솔 텍스트 캡처 | [`images/01_python_tdd_console.png`](images/01_python_tdd_console.png) |
+| 2. 사칙연산 안드로이드 앱 — 가상머신 실행 화면 캡처 | [`images/02_android_123x567.png`](images/02_android_123x567.png) |
+| 소스 코드 전체 | [`01_python_tdd/`](01_python_tdd), [`02_android_calculator/`](02_android_calculator) |
+| 실행 이미지 파일 | [`images/`](images) |
+
 ## 1. Test-Driven Development 실습: 사칙연산 (강의자료 ch04 48~52p)
 
 | 파일 | 설명 |
@@ -43,10 +52,15 @@ cd 02_android_calculator
 
 ### 실행 화면 (Android 에뮬레이터)
 
-Pixel 6 에뮬레이터(Android 15, API 35)에서 실행 — 왼쪽부터 `100 + 10`, `100 − (−10)`, `100 × 10`, `100 ÷ 10`, `100 ÷ 0`
+Pixel 6 에뮬레이터(Android 15, API 35)에서 `123 × 567` 실행 → **69741**
+
+<img src="images/02_android_123x567.png" width="360" alt="123 × 567 = 69741 실행 화면">
+
+#### 추가 실행 화면
+
+왼쪽부터 `100 + 10`, `100 − (−10)`, `100 × 10`, `100 ÷ 10`, `100 ÷ 0`
 
 ![안드로이드 앱 실행 화면](images/02_android_all.png)
 
-| 덧셈 | 뺄셈 | 곱셈 | 나눗셈 | 0으로 나누기 |
-|---|---|---|---|---|
-| ![](images/02_android_add.png) | ![](images/02_android_subtract.png) | ![](images/02_android_multiply.png) | ![](images/02_android_divide.png) | ![](images/02_android_divide_by_zero.png) |
+- 가로 모드에서는 입력·버튼을 왼쪽, 결과를 오른쪽에 배치한 별도 레이아웃(`res/layout-land`)을 사용해 한 화면에 모두 보이도록 함
+- 긴 소수 결과는 유효숫자 10자리로 반올림해 표시
