@@ -1,0 +1,14 @@
+$ python test_FourBasicOpt.py -v   # 3단계(GREEN): 최종
+test_add_01 (__main__.FourBasicOptTest.test_add_01) ... ok
+test_add_02 (__main__.FourBasicOptTest.test_add_02) ... ok
+test_divide_01 (__main__.FourBasicOptTest.test_divide_01) ... ok
+test_divide_02 (__main__.FourBasicOptTest.test_divide_02) ... ok
+test_multiply_01 (__main__.FourBasicOptTest.test_multiply_01) ... ok
+test_multiply_02 (__main__.FourBasicOptTest.test_multiply_02) ... ok
+test_subtract_01 (__main__.FourBasicOptTest.test_subtract_01) ... ok
+test_subtract_02 (__main__.FourBasicOptTest.test_subtract_02) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.001s
+
+OK

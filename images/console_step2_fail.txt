@@ -1,0 +1,26 @@
+$ python test_FourBasicOpt.py -v   # 2단계: 슬라이드 52p 코드 그대로
+test_add_01 (__main__.FourBasicOptTest.test_add_01) ... ok
+test_add_02 (__main__.FourBasicOptTest.test_add_02) ... ok
+test_divide_01 (__main__.FourBasicOptTest.test_divide_01) ... ok
+test_divide_02 (__main__.FourBasicOptTest.test_divide_02) ... ERROR
+test_multiply_01 (__main__.FourBasicOptTest.test_multiply_01) ... ok
+test_multiply_02 (__main__.FourBasicOptTest.test_multiply_02) ... ok
+test_subtract_01 (__main__.FourBasicOptTest.test_subtract_01) ... ok
+test_subtract_02 (__main__.FourBasicOptTest.test_subtract_02) ... ok
+
+======================================================================
+ERROR: test_divide_02 (__main__.FourBasicOptTest.test_divide_02)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\dev\tdd\test_FourBasicOpt.py", line 29, in test_divide_02
+    self.assertEqual(four_opt.divide(100, 0), 0)
+                     ~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\dev\tdd\FourBasicOpt.py", line 14, in divide
+    return x / y
+           ~~^~~
+ZeroDivisionError: division by zero
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.005s
+
+FAILED (errors=1)

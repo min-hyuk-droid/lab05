@@ -1,0 +1,5 @@
+$ python test_FourBasicOpt.py   # 1단계(RED): 실제 코드 작성 전
+Traceback (most recent call last):
+  File "C:\dev\tdd\test_FourBasicOpt.py", line 3, in <module>
+    from FourBasicOpt import FourBasicOpt
+ModuleNotFoundError: No module named 'FourBasicOpt'
